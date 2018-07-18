@@ -1,0 +1,36 @@
+[ 2018-06-24T08:28:05+08:00 ] 121.51.66.108 /wx_sample.php?signature=05057d9dd5b9c0b3bfadc5250e06c1901d9ec741&timestamp=1529800085&nonce=695572027&openid=oKGuiv9w_ZhYohKsWjyiZ_8MYagw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+ERR: 无法加载模块:Wx_sample
+
+[ 2018-06-24T08:53:33+08:00 ] 112.253.25.52 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-06-24T08:54:15+08:00 ] 112.253.25.52 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-06-24T10:05:26+08:00 ] 112.253.25.52 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-06-24T14:55:48+08:00 ] 112.253.25.52 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-06-24T16:49:44+08:00 ] 112.253.25.52 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+ERR: 无法加载模块:Favicon
+

@@ -1,0 +1,42 @@
+[ 2018-06-23T08:21:20+08:00 ] 121.51.66.108 /wx_sample.php?signature=978cd24d586128101922bd0dcccb5cf9e6a6ce3e&timestamp=1529713280&nonce=172171160&openid=oKGuivwbs6EdQkXnhvL5yexrXzeA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+ERR: 无法加载模块:Wx_sample
+
+[ 2018-06-23T08:21:27+08:00 ] 121.51.66.108 /wx_sample.php?signature=a3edc389d9e51e10caae208e96351aaa0aedd252&timestamp=1529713287&nonce=642860063&openid=oKGuivwbs6EdQkXnhvL5yexrXzeA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Wx_sample
+
+[ 2018-06-23T10:28:39+08:00 ] 112.253.25.52 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-06-23T10:28:43+08:00 ] 112.253.25.52 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-06-23T13:04:56+08:00 ] 121.51.66.108 /wx_sample.php?signature=3308de40201fe0427fafc730ed92f3e0b24da382&timestamp=1529730296&nonce=2008300169&openid=oKGuiv-7CadBIeWdzmYVVqye0QMQ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+ERR: 无法加载模块:Wx_sample
+
+[ 2018-06-23T13:05:11+08:00 ] 121.51.66.108 /wx_sample.php?signature=8c84a4ef70efbd15dfba53f5ccfe89ac4bb465c3&timestamp=1529730311&nonce=2053774332&openid=oKGuiv-7CadBIeWdzmYVVqye0QMQ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+ERR: 无法加载模块:Wx_sample
+
+[ 2018-06-23T13:05:32+08:00 ] 121.51.66.108 /wx_sample.php?signature=cbaaf84e1ba2dd194b3895d62273ef71ea61be81&timestamp=1529730332&nonce=2047149184&openid=oKGuiv-7CadBIeWdzmYVVqye0QMQ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+ERR: 无法加载模块:Wx_sample
+

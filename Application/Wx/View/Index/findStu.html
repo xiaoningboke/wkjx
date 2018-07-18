@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>详细信息</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="__PUBLIC__/css/sm.css">
+
+  </head>
+  <body>
+    <div class="page-group">
+<div class="page page-current">
+<header class="bar bar-nav">
+<h1 class='title'>详细信息</h1>
+</header>
+<div class="content"> 
+<form action="{:U('Wx/Index/exitCoach')}" method="post" onsubmit = "return checkUser();" id = "userMsg">
+  <input type="hidden" name="id" value="{$data['id']}" id="stuId">
+  <div class="list-block">
+    <ul>
+      <!-- Text inputs -->
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-name"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">昵称</div>
+            <div class="item-input">
+              {$data['nickname']}
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-name"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">姓名</div>
+            <div class="item-input">
+              {$data['username']}
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-email"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">手机</div>
+            <div class="item-input">
+              {$data['phone']}
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-email"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">邮箱</div>
+            <div class="item-input">
+              {$data['email']}
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-name"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">地址</div>
+            <div class="item-input">
+              {$data['address']}
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-gender"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">性别</div>
+            <div class="item-input" id = "sexs">
+              <input type="hidden" id = "sex" value="{$data['sex']}">
+              
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Date -->
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">年龄</div>
+            <div class="item-input">
+              {$data['age']}
+            </div>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="content-block">
+    <div class="row">
+      
+      <div class="col-50"><submit  onclick = "byStu()"  class="button button-big button-fill button-success">通过</submit></div>
+      <div class="col-50"><a  href="{:U('Wx/Index/score',array('id'=>$data['id']))}"  class="button button-big button-fill button-success">录入成绩</a></div>
+      <br/> <br/><br/>
+      <div class="col-100"><a  href="tel://{$data['phone']}"  class="button button-big button-fill button-success">拨打电话</a></div>
+    </div>
+  </div>
+</div>
+</form>
+    </div>
+    </div>
+  </body>
+</html>
+<script>
+
+function byStu(){
+  var stuId = document.getElementById("stuId").value;
+  var xhr = new XMLHttpRequest();
+  xhr.open('post', "{:U('Wx/Index/ByStu')}" );
+  xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+  xhr.send('id='+stuId);
+  xhr.onreadystatechange = function () {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+         alert(xhr.responseText);
+       } 
+  };
+
+
+}
+window.onload = function () {
+       var sex = document.getElementById("sex").value;
+       var sexs = document.getElementById("sexs");
+       if(sex == 1){
+          sexs.innerHTML ="男";
+       }else if(sex == 2){
+        sexs.innerHTML ="女";
+       }else{
+        sexs.innerHTML ="保密";
+       }
+}  
+</script>
